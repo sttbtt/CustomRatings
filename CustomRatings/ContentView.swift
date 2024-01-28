@@ -23,7 +23,7 @@ struct ContentView: View {
             maxRating: 3,
             currentRating: $heartRating,
             width: 50,
-            symbol: "heart",
+            symbolEnum: .heart,
             color: .red
         )
         RatingsView(
@@ -31,13 +31,7 @@ struct ContentView: View {
             currentRating: $pinRating,
             width: 40,
             symbol: "pin",
-            color: .blue
-        )
-        RatingsView(
-            maxRating: 5,
-            currentRating: $bookMarkRating,
-            symbolEnum: .bookmark,
-            color: .teal
+            color: .green
         )
     }
 }
